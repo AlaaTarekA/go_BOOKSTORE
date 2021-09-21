@@ -13,7 +13,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var connectionString string = "root:myDatabase_123@tcp(docker.for.mac.localhost:3306)/books_database?charset=utf8&parseTime=True&loc=Local"
+var connectionString string = "root:mypassword@tcp(docker.for.mac.localhost:3306)/books_database?charset=utf8&parseTime=True&loc=Local"
 
 // a function that returns all the books in the database
 func getAllBooks(w http.ResponseWriter, r *http.Request) {
